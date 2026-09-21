@@ -22,17 +22,20 @@ k=st.slider("Evidence documents",3,8,5)
 
 use_llm=st.checkbox("Use API-backed grounded summarisation",False)
 api_key=""
+model=""
 if use_llm:
     try:
         api_key=st.secrets.get("OPENAI_API_KEY","")
+        model=st.secrets.get("OPENAI_MODEL","")
     except Exception:
         api_key=os.getenv("OPENAI_API_KEY","")
-    if not api_key:
-        st.info("Add OPENAI_API_KEY to Streamlit secrets to enable the optional API-backed path. Do not paste a key into the app.")
+        model=os.getenv("OPENAI_MODEL","")
+    if not api_key or not model:
+        st.info("Add OPENAI_API_KEY and OPENAI_MODEL to Streamlit secrets to enable the optional API-backed path. Do not paste a key into the app.")
 
 if st.button("Run research workflow",type="primary"):
     try:
-        result=assistant.run(query,k,llm=use_llm and bool(api_key),api_key=api_key or None)
+        result=assistant.run(query,k,llm=use_llm and bool(api_key) and bool(model),api_key=api_key or None,model=model or None)
         if "llm_summary" in result:
             st.subheader("Grounded summary")
             st.write(result["llm_summary"]["text"])
