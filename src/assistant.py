@@ -54,7 +54,9 @@ class EnergyNewsAssistant:
         return result
 
 def openai_grounded_summary(query,evidence,api_key,model=None):
-    model=model or os.getenv("OPENAI_MODEL","gpt-5.6-luna")
+    model=model or os.getenv("OPENAI_MODEL")
+    if not model:
+        raise ValueError("OPENAI_MODEL is required for API-backed summarisation.")
     context="\n".join(f'[{e["source_id"]}] {e["evidence"]}' for e in evidence)
     prompt=(
         "You are an energy-market research assistant. Use only the supplied evidence. "
