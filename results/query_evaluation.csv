@@ -1,0 +1,21 @@
+target_category,query,rank_first_relevant,hit1,hit3,hit5,hit10,rr,top5_relevance_rate
+crude,crude oil prices and OPEC production,1,1,1,1,1,1.0,1.0
+crude,oil supply cuts and crude market prices,1,1,1,1,1,1.0,1.0
+crude,petroleum output exports and crude prices,1,1,1,1,1,1.0,1.0
+crude,oil production disruptions and market supply,1,1,1,1,1,1.0,0.6
+nat-gas,natural gas prices supply and demand,1,1,1,1,1,1.0,1.0
+nat-gas,gas pipeline supply and natural gas market,1,1,1,1,1,1.0,1.0
+nat-gas,natural gas production reserves and prices,1,1,1,1,1,1.0,1.0
+nat-gas,gas demand storage and natural gas supply,1,1,1,1,1,1.0,1.0
+gas,gasoline market prices and refinery supply,1,1,1,1,1,1.0,1.0
+gas,gasoline demand prices and inventories,1,1,1,1,1,1.0,0.8
+gas,motor gasoline supply and fuel market,1,1,1,1,1,1.0,0.8
+gas,gasoline production shortages and prices,1,1,1,1,1,1.0,0.8
+fuel,fuel oil prices supply and refinery demand,1,1,1,1,1,1.0,0.2
+fuel,fuel shortages prices and energy supply,2,0,1,1,1,0.5,0.2
+fuel,heating fuel market demand and prices,8,0,0,0,1,0.125,0.0
+fuel,fuel production stocks and consumption,8,0,0,0,1,0.125,0.0
+pet-chem,petrochemical prices production and demand,2,0,1,1,1,0.5,0.6
+pet-chem,petrochemical industry output and feedstocks,1,1,1,1,1,1.0,0.4
+pet-chem,chemical market prices and petroleum feedstock,8,0,0,0,1,0.125,0.0
+pet-chem,petrochemical supply production and exports,2,0,1,1,1,0.5,0.6
