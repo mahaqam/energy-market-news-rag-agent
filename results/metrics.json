@@ -1,0 +1,21 @@
+{
+  "documents": 10788,
+  "energy_documents": 683,
+  "controlled_queries": 20,
+  "hit_at_1": 0.7,
+  "hit_at_3": 0.85,
+  "hit_at_5": 0.85,
+  "hit_at_10": 1.0,
+  "mrr": 0.79375,
+  "mean_top5_relevance_rate": 0.65,
+  "vectorizer_fit_seconds": 16.667202636999946,
+  "workflow_evidence_items": 100,
+  "schema_valid_rate": 1.0,
+  "extractive_groundedness_rate": 1.0,
+  "limitations": [
+    "The uploaded Reuters corpus is historical and is not a modern European power/emissions feed.",
+    "The 20 benchmark queries are controlled, expert-written prompts rather than a production query distribution.",
+    "Verified metrics cover hybrid retrieval and deterministic extractive validation only.",
+    "No real LLM output is included in verified metrics unless an API-backed run is separately executed."
+  ]
+}
