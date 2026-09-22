@@ -55,6 +55,8 @@ A ZIP containing one XLS/XLSX file is also accepted.
 
 ## Demo
 
+**Live demo:** https://energy-market-news-rag-agent.streamlit.app/
+
 ```bash
 streamlit run app/dashboard.py
 ```
